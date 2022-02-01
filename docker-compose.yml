@@ -1,0 +1,13 @@
+version: '3.1'
+ 
+services:
+  api_blog:
+    container_name: api_blog 
+    hostname: api_blog
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: blog12345
+      POSTGRES_DB: api-blog
+    ports:
+      - 5432:5432
